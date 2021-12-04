@@ -1,2 +1,2 @@
 # prime-algorithm
-Most simple prime algorithm
+Another simple prime algorithm
