@@ -1,6 +1,6 @@
 #just another way to find prime numbers, If list empty its prime
 n=int(input("Enter your number: "))
-if n==1 or n==2:
+if n==2:
 	print("Its Prime")
 else:
 	l = []
