@@ -1,9 +1,14 @@
 #just another way to find prime numbers, If list empty its prime
 def is_prime(num):
-    """Return True if `num` is prime, otherwise False."""
     if num < 2:
         return False
-    for i in range(2, int(num**0.5) + 1):
+    divisors = []
+    for i in range(2, ((num**0.5)+1)):
         if num % i == 0:
-            return False
-    return True
+            divisors.append(i)
+    return len(divisors) == 0
+n = int(input("Enter your number: "))
+if is_prime(n):
+    print("Its Prime")
+else:
+    print("Not Prime")
